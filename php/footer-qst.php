@@ -1,18 +1,14 @@
 <?php
-include 'config.php';
+include 'config.php'; // Só se necessário para pegar a URL base
 
-if (isset($_POST['footer-qst']) && trim($_POST['footer-qst']) !== '') {
-    $mensagem = trim($_POST['footer-qst']);
+echo 'aaaaaaaaaaaaaaaaaa';
 
-    // Salva a mensagem na sessão
-    $_SESSION['flash_msg'] = $mensagem;
-
-    // Redireciona para a home (sem GET na URL)
-    header('Location: ' . URL . 'pages/home.php');
+if (isset($_POST['footer-qst'])) {
+    $mensagem = $_POST['footer-qst'];
+    header('Location: ' . URL . 'pages/home.php?msg=' . $mensagem);
     exit();
 } else {
-    // Se o campo estiver vazio, redireciona sem nada
-    header('Location: ' . URL . 'pages/home.php');
+    header('Location: ' . URL . 'pages/home.php#footer-qst');
     exit();
 }
 ?>

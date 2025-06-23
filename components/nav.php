@@ -1,13 +1,13 @@
 <header>
     <!-- Logo -->
-    <div class="logo"><img src="<?=URL?>/images/logo.svg" alt=""></div>
+    <div class="logo"><a href="<?=URL?>pages/home.php"><img src="<?=URL?>/images/logo.svg" alt=""></a></div>
 
     <!-- Navigation Links -->
     <nav>
       <ul class="links">
-        <li><a href="#">Produtos</a></li>
+        <li><a href="<?=URL?>pages/products.php">Produtos</a></li>
         <li><a href="#">Lojas</a></li>
-        <li><a href="#">Sabores!</a></li>
+        <li><a href="<?=URL?>pages/cardapio.php">Sabores!</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
     </nav>

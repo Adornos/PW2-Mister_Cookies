@@ -54,12 +54,9 @@
     </div>
 </footer>
 <?php
-
-if (isset($_SESSION['flash_msg'])) {
-    $msg = htmlspecialchars($_SESSION['flash_msg']);
+if (isset($_GET['msg']) && $_GET['msg'] != '') {
+    $msg = htmlspecialchars($_GET['msg']);
     echo "<script>alert('Sua Mensagem foi enviada:\\n{$msg}');</script>";
-
-    // Apaga a mensagem da sessão depois de exibir (flash)
-    unset($_SESSION['flash_msg']);
+    var_dump($_GET['msg']);
 }
 ?>
