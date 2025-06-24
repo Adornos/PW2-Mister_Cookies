@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Cookie Duo Fitness",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duofitness.png"
+    },
+    {
+      "id": 2,
+      "title": "Cookie Duo Chocol",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duochocol.png"
+    },
+    {
+      "id": 3,
+      "title": "Cookie Duo RedVet",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/redvet.png"
+    },
+    {
+      "id": 4,
+      "title": "Cookie Duo Oreo 22",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duooreo.png"
+    },
+    {
+      "id": 5,
+      "title": "Cookie Duo BomBom",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duobombom.png"
+    },
+    {
+      "id": 6,
+      "title": "Cookie Duo Paçoca",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duopaçoca.png"
+    },
+        {
+      "id": 7,
+      "title": "Cookie Duo Romeu",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duoromeu.png"
+    },
+    {
+      "id": 8,
+      "title": "Cookie Duo Black",
+      "price": 19.99,
+      "description": "guilherme arbusto",
+      "path": "assets/duoblac.png"
+    }
+  ]
+}
