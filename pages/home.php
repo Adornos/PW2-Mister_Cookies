@@ -1,5 +1,6 @@
 <?php
 
+
 include '../php/config.php'; // constants
 
 include ROOT . 'components/header.php'; // header
@@ -24,7 +25,7 @@ include ROOT . 'components/nav.php' //navbar
         </div>
         <div class="column-2">
             <div class="background">
-                <img src="<?=URL?>images\Home\cookie-1.png" class="image" />
+                <img src="<?=IMG_PATH?>\Home\cookie-1.png" class="image" />
             </div>
         </div>
     </div>
@@ -33,7 +34,7 @@ include ROOT . 'components/nav.php' //navbar
         <div class="content">
             <div class="column-1">
                 <div class="background">
-                    <img src="<?=URL?>images\Home\cookie-2.png" class="image" />
+                    <img src="<?=IMG_PATH?>\Home\cookie-2.png" class="image" />
                 </div>
             </div>
             <div class="column-2 highlight-top">
@@ -53,7 +54,7 @@ include ROOT . 'components/nav.php' //navbar
         <div class="content">
             <div class="column-1">
                 <div class="background">
-                    <img src="<?=URL?>images\Home\cookie-3.png" class="image" />
+                    <img src="<?=IMG_PATH?>\Home\cookie-3.png" class="image" />
                 </div>
             </div>
             <div class="column-2">
@@ -75,7 +76,7 @@ include ROOT . 'components/nav.php' //navbar
         <div class="content">
             <div class="column-1">
                 <div class="background">
-                    <img src="<?=URL?>images\Home\cookie-4.png" class="image" />
+                    <img src="<?=IMG_PATH?>\Home\cookie-4.png" class="image" />
                 </div>
             </div>
             <div class="column-2">
@@ -97,7 +98,7 @@ include ROOT . 'components/nav.php' //navbar
         <div class="content">
             <div class="column-1">
                 <div class="background">
-                    <img src="<?=URL?>images\Home\cookie-5.png" class="image" />
+                    <img src="<?=IMG_PATH?>\Home\cookie-5.png" class="image" />
                 </div>
             </div>
             <div class="column-2 highlight-top">

@@ -4,7 +4,7 @@
     </svg>
     <div class="content">
         <div class="div-1">
-            <img src="<?=URL?>/images/logo.svg" alt="">
+            <img src="<?=IMG_PATH?>/logo.svg" alt="">
             <form action="<?=URL?>/php/footer-qst.php" method="post">
                 <label for="sugs">Envie sua sugestão ao nosso SAC:</label>
                 <div class="inline">
