@@ -6,6 +6,7 @@
     --color3: #E06C61;
     --color4: #A74252;
     --color5: #F7B11E;
+    --color6: #3B0B24;
 }
 
 body {
@@ -847,7 +848,6 @@ footer .div-6 ul {
 
 }
 
-
 body.cardapio header{
     position: relative;
 }
@@ -885,4 +885,68 @@ body.cardapio .div-title img{
     margin: 0 auto;
     background-color: var(--color1);
     padding: 0 2.2vw;
+}
+
+body.cardapio .list-container{
+    margin: 32px auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 16px;
+    justify-content: center;
+    max-width: 1312px;
+}
+
+body.cardapio .list-item{
+    max-width: 304px;
+    background-color: var(--color1);
+    box-shadow: #00000040 0px 4px 4px;
+}
+
+body.cardapio .list-item:hover{
+    transition: 0.3s;
+    box-shadow: #00000060 0px 8px 8px;
+}
+
+body.cardapio .list-item img{
+    position: relative;
+    visibility: visible;
+}
+
+body.cardapio .list-item div{
+    text-align: center;
+    padding: 0 8%;
+    color: var(--color6);
+}
+
+body.cardapio .list-item .item-title{
+    font-family: 'Fredoka', 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+body.cardapio .list-item .item-price{
+    font-size: 20px;
+    margin: 0;
+}
+
+body.cardapio .list-item .item-alt{
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body.cardapio header::after {
+    top: 100%;
+    }
+
+    body.cardapio .div-title img{
+        width: 80vw;
+    }
+
+    body.cardapio .list-container{
+        margin: 0 0;
+        padding: 0 0;
+    }
 }

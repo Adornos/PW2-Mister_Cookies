@@ -8,14 +8,20 @@
 <main>
 
     <div class="div-title">
-        <img src="<?=URL?>images/Sabores/cardapio.svg" alt="">
+        <img src="<?=URL?>images/cardapio/cardapio.svg" alt="">
     </div>
 
-</main>
+    <div id="div-list">
+        <ul class="list-container" id="list-container">
 
+        </ul>
+    </div>
+    <script> const URL = '<?=URL?>'; </script>
+    <script src="<?=URL?>js/cardapio/script.js"></script>
+</main>
 
 <?php
 
-    include ROOT . 'components/footer.php'
-
+    include ROOT . 'components/footer.php';
+    
 ?>
