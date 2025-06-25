@@ -8,6 +8,7 @@
     <title>Mister Cookies</title>
     <link rel="stylesheet" href="<?=CSS_PATH?>style.css">
 </head>
+
 <body class='<?=basename($_SERVER['SCRIPT_NAME'], '.php')?>'>
     
 
