@@ -103,6 +103,14 @@ nav ul.links li a {
     background-color: #A74252;
 }
 
+.bottom{
+    position: absolute;
+    visibility: hidden;
+    height: 56px;
+    width: 100vw;
+    top: 100%;
+}
+
 /* Header - Mobile */
 @media (max-width: 768px) {
     header {
@@ -150,6 +158,10 @@ nav ul.links li a {
 
     .auth-buttons button {
         width: 100%;
+    }
+
+    .bottom{
+        visibility: visible;
     }
 }
 
@@ -660,33 +672,19 @@ footer ul li:first-child {
     font-size: 20px;
 }
 
-footer .div-1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
+footer .div-1 { grid-area: 1 / 1 / 2 / 2; }
 
-footer .div-2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
+footer .div-2 { grid-area: 1 / 2 / 2 / 3; }
 
-footer .div-3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
+footer .div-3 { grid-area: 1 / 3 / 2 / 4; }
 
-footer .div-4 {
-    grid-area: 1 / 4 / 2 / 5;
-}
+footer .div-4 { grid-area: 1 / 4 / 2 / 5; }
 
-footer .div-5 {
-    grid-area: 2 / 1 / 3 / 2;
-}
+footer .div-5 { grid-area: 2 / 1 / 3 / 2; }
 
-footer .div-6 {
-    grid-area: 2 / 3 / 3 / 5;
-}
+footer .div-6 { grid-area: 2 / 3 / 3 / 5; }
 
-footer .div-1 img {
-    height: 25%;
-}
+footer .div-1 img { height: 25%; }
 
 footer .div-1 label {
     display: block;
@@ -708,13 +706,9 @@ footer .div-1 input {
     padding-right: 56px;
 }
 
-footer .div-1 input::placeholder {
-    color: var(--color1);
-}
+footer .div-1 input::placeholder { color: var(--color1); }
 
-footer .div-1 .inline {
-    position: relative;
-}
+footer .div-1 .inline { position: relative; }
 
 footer .div-1 button {
     align-self: center;
@@ -730,34 +724,24 @@ footer .div-1 button {
 }
 
 
-footer .div-1 button{
-    cursor: pointer;
-}
+footer .div-1 button{ cursor: pointer; }
 footer .div-1 button:active{
     background-color: var(--color3);
 }
 
 footer .div-1 button svg {
-    fill: var(--color1);
-    width: 50%;
-}
+    fill: var(--color1); width: 50%; }
 
-footer .div-5 {
-    align-self: center;
-}
+footer .div-5 { align-self: center; }
 
-footer .div-6{
-    align-self: center;
-}
+footer .div-6{ align-self: center; }
 
 footer .div-6 * {
     font-size: 18px;
     font-weight: 400;
 }
 
-footer .div-6 hr {
-    margin: 0 16px;
-}
+footer .div-6 hr { margin: 0 16px; }
 
 footer .div-6 ul {
     display: flex;
@@ -793,22 +777,26 @@ footer .div-6 ul {
     }
 
     footer .content .div-1 img {
-        grid-area: 1 / 3 / 2 / 4; 
+        grid-area: 1 / 1 / 2 / 2; 
         align-self: center;
         justify-self: center;
-        height: 15vw;
+        height: 13vw;
     }
 
     footer .content .div-1 form{
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 2 / 2 / 4;
         align-self: center;
+    }
+
+    footer .content .div-1 form label{
+        text-align: end;
     }
     
     footer .content .div-1 form .inline input{
         width: 80%;
     }
     footer .content .div-1 form .inline button{
-        left: calc(80% + 13px);
+        left: calc(80% + 14px);
     }
 
 }
@@ -816,18 +804,18 @@ footer .div-6 ul {
 @media (max-width: 768px){
     footer .content{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr) repeat(2, 0.2fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, min-content);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 16px;
     }
 
-    footer .content .div-1 { grid-area: 1 / 1 / 3 / 4; }
-    footer .content .div-2 { grid-area: 3 / 1 / 4 / 2; }
-    footer .content .div-3 { grid-area: 3 / 2 / 4 / 3; }
-    footer .content .div-4 { grid-area: 3 / 3 / 4 / 4; }
-    footer .content .div-5 { grid-area: 4 / 1 / 5 / 4; }
-    footer .content .div-6 { grid-area: 5 / 1 / 6 / 4; }
+    footer .content .div-1 { grid-area: 1 / 1 / 2 / 2; }
+    footer .content .div-2 { grid-area: 2 / 1 / 3 / 2; }
+    footer .content .div-3 { grid-area: 3 / 1 / 4 / 2; }
+    footer .content .div-4 { grid-area: 4 / 1 / 5 / 2; }
+    footer .content .div-5 { grid-area: 5 / 1 / 6 / 2; }
+    footer .content .div-6 { grid-area: 6 / 1 / 7 / 2; }
 
     footer .content .div-1 {
         display: grid;
@@ -839,11 +827,32 @@ footer .div-6 ul {
     footer .content .div-1 img { grid-area: 1 / 1 / 2 / 2; }
     footer .content .div-1 form { grid-area: 2 / 1 / 3 / 2; }
 
+    footer .content .div-1 img { 
+        min-width: 300px;
+        height: auto;
+    }
+
+
+    footer .content .div-1 form label{
+        text-align: center;
+    }
+
     footer .content .div-1 form .inline input{
         width: 60%;
+        margin-inline: calc(50% - 30% - 35px);
     }
     footer .content .div-1 form .inline button{
-        left: calc(60% + 13px);
+        left: calc(60% + (50% - 30% - 35px) + 14px);
+    }
+
+    footer .content .div-6 ul{flex-wrap: wrap;}
+    footer .content .div-6 ul li:nth-child(2){flex-basis: 100%}
+
+    footer .content:not(:first-child){
+        text-align: center;
+    }
+     footer .content ul{
+        padding: 0;
     }
 
 }
@@ -851,17 +860,17 @@ footer .div-6 ul {
 body.cardapio header{
     position: relative;
 }
-body.cardapio header::after {
+/* body.cardapio header::after {
     content: "";
     display: block;
     position: absolute;
     top: 90%;
     width: 100vw;
     height: 64px;
-    /* Altura do fundo */
+    /* Altura do fundo *
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'><path fill='%23b55c00' fill-opacity='1' d='M0,256L30,218.7C60,181,120,107,180,90.7C240,75,300,117,360,160C420,203,480,245,540,218.7C600,192,660,96,720,69.3C780,43,840,85,900,117.3C960,149,1020,171,1080,149.3C1140,128,1200,64,1260,69.3C1320,75,1380,149,1410,186.7L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z'/></svg>") no-repeat;
     background-size: 100% 100%;
-}
+} */
 
 body.cardapio .div-title{
     position: relative;
